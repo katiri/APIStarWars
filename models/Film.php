@@ -1,5 +1,7 @@
 <?php
     class Film{
+        public $id = null;
+        public $url;
         public $name;
         public $episode_number;
         public $synopsis;
@@ -8,6 +10,13 @@
         public $producers;
         public $characters;
         public $film_age = null;
+
+        public function getFilmID(){
+            $film_url_explode = explode('/', rtrim($this->url, '/'));
+            $id = end($film_url_explode);
+
+            return $id;
+        }
 
         public function getFilmAge(){
             $releaseDate = new DateTime($this->release_date);

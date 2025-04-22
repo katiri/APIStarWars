@@ -36,6 +36,7 @@
                 $list_films = $list_films['response'];
 
                 foreach($list_films as $film){
+                    $film->id = $film->getFilmID();
                     $film->film_age = $film->getFilmAge();
                 }
             }
@@ -75,6 +76,7 @@
 
                 $film = $film['response'];
 
+                $film->id = $film->getFilmID();
                 $film->film_age = $film->getFilmAge();
 
                 $characters = $this->characterDao->list();

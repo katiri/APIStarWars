@@ -11,6 +11,7 @@
         public function buildFilm($data){
             $film = new Film();
 
+            $film->url = $data['url'];
             $film->name = $data['name'];
             $film->episode_number = $data['episode_number'];
             $film->synopsis = $data['synopsis'];
@@ -34,6 +35,7 @@
 
                     foreach($data['results'] as $film){
                         $data_processed = [
+                            'url' => $film['url'],
                             'name' => $film['title'],
                             'episode_number' => $film['episode_id'],
                             'synopsis' => $film['opening_crawl'],
@@ -71,6 +73,7 @@
                     $data = json_decode($response['output'], true);
 
                     $data = [
+                        'url' => $data['url'],
                         'name' => $data['title'],
                         'episode_number' => $data['episode_id'],
                         'synopsis' => $data['opening_crawl'],
