@@ -1,0 +1,4 @@
+.vscode/
+database/*.bak
+vendor/
+.env
