@@ -3,7 +3,7 @@
 Este é um projeto desenvolvido durante um teste de um processo seletivo.
 
 ## Como instalar o projeto
-O primeiro passo é clonar o projeto no seu repositório local. Para isso você precisa ter o [Git](ref_git "Link para o site do Git"), o [XAMPP](ref_xampp "Link para o site do XAMPP") com PHP 7.4 e MySQL e o [Composer](ref_composer "Link para o site do Composer") instalados no seu computador.
+O primeiro passo é clonar o projeto no seu repositório local. Para isso você precisa ter o [Git](https://git-scm.com/ "Link para o site do Git"), o [XAMPP](https://www.apachefriends.org/pt_br/index.html "Link para o site do XAMPP") com PHP 7.4 e MySQL e o [Composer](https://getcomposer.org/ "Link para o site do Composer") instalados no seu computador.
 
 Após instalar tudo crie uma pasta no dentro de htdocs do XAMPP onde gostaria de clonar o projeto. Em seguida abra o terminal e navegue até essa pasta.
 
@@ -142,11 +142,3 @@ Content-Type: application/json
 João Pedro P. Ramos - <jpedropazosramos@gmail.com> - [@LinkedIn](https://www.linkedin.com/in/joao-pedro-ramos "Meu LinkedIn")
 
 <https://katiri.github.io/>
-
-
-
-
-
-[ref_git]: https://git-scm.com/
-[ref_xampp]: https://www.apachefriends.org/pt_br/index.html
-[ref_composer]: https://getcomposer.org/
